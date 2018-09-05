@@ -204,9 +204,9 @@ export default class TrackVisibility extends Component {
     };
 
     return (
-      <div ref={!nodeRef && this.setNodeRef} {...props}>
+      <React.Fragment ref={!nodeRef && this.setNodeRef} {...props}>
         {this.getChildren()}
-      </div>
+      </React.Fragment>
     );
   }
 }
